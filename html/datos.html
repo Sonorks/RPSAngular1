@@ -1,17 +1,13 @@
-<div align="center" id="datosEstudiante" class="w3-div" style="background-color:#c2d6d6; width:50%;">	
-		<form style="background-color:#c2d6d6" name="loginForm" ng-submit="encuestaCtrl.mostrarDatos()" novalidate="false" ng-show="encuestaCtrl.formVisible">
-			<h1>Formulario de caracterización</h1>
-			<input ng-model="encuestaCtrl.datos.cedula" id="cedula" name="cedula" type="text" size="30" maxlength="10" placeholder="cedula" required>
+<div align="center" id="datosEstudiante" class="w3-div" style="background-color:#000000; width:50%; opacity:0.8; ">	
+		<form style="background-color:#000000" name="loginForm" ng-submit="encuestaCtrl.mostrarDatos()" novalidate="false" ng-show="encuestaCtrl.formVisible">
+			<h1 style="color:#ffffff"><b>FORMULARIO DE CARACTERIZACIÓN</b></h1>
+			<input ng-model="encuestaCtrl.datos.cedula" id="cedula" name="cedula" type="text" size="30" class="w3-input w3-hover-green" style="width:30%; height:4%" maxlength="10" placeholder="cedula" required>
 			<br/>
+			<input ng-model="encuestaCtrl.datos.usuario" id="usuario" name="usuario" type="text" size="30" maxlength="30" class="w3-input w3-hover-green" style="width:30%; height:4%" placeholder="usuario UdeA" required>
 			<br/>
-			<input ng-model="encuestaCtrl.datos.usuario" id="usuario" name="usuario" type="text" size="30" maxlength="30" placeholder="usuario UdeA" required>
+			<input ng-model="encuestaCtrl.datos.programa" id="programa" name="programa" type="text" size="30" maxlength="30" class="w3-input w3-hover-green" style="width:30%; height:4%" placeholder="programa academico" required>
 			<br/>
-			<br/>
-			<input ng-model="encuestaCtrl.datos.programa" id="programa" name="programa" type="text" size="30" maxlength="30" placeholder="programa academico" required>
-			<br/>
-			<br/>
-			<input ng-model="encuestaCtrl.datos.edad" id="edad" name="edad" type="number" size="30" maxlength="3" placeholder="edad" required>
-			<br/>
+			<input ng-model="encuestaCtrl.datos.edad" id="edad" name="edad" type="number" size="30" maxlength="3" class="w3-input w3-hover-green" style="width:30% ; height:4%" placeholder="edad" required>
 			<br/>
 			<select ng-model="encuestaCtrl.datos.genero" id="genero" name="genero" placeholder="genero">
 				<option value="masculino">Masculino</option>
@@ -20,8 +16,8 @@
 			</select>
 			<br/>
 			<br/>
-			<input id="botonIniciar" type="submit"  class="w3-btn" value="Iniciar" >
-			<input id="botonCancelar" type="button" class="w3-btn" value="Cancelar" >
+			<input id="botonIniciar" type="submit"  class="w3-btn w3-green" value="Iniciar" >
+			<input id="botonCancelar" type="button" class="w3-btn w3-red" value="Cancelar" >
 			<br/>
 	</form>
 </div>
