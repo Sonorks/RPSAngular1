@@ -1,0 +1,45 @@
+<!Doctype html encoding="UTF8">
+<html ng-app="caracterizacion">
+	<head>
+		<title>Caracterizacion</title>
+		<script type="text/javascript" src="../js/angular.min.js"></script>
+		<script type="text/javascript" src="../js/app.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+		<link rel = "stylesheet" type="text/css" href="../style/style.css" />
+		<!--<style>stilo.ccs </style>
+		<scrypt> archivoJavaScript.js</scrypt> -->
+		<style type="text/css">
+		textarea,input,select {
+			background-color: #FDFBFB;
+			border: 1px #BBBBBB solid;
+			padding: 2px;
+			margin: 1px;
+			font-size: 14px;
+			color: #808080;
+		}
+
+		body{  background-color: #669999; color: #002222	; font-size: 12px; font-family: verdana; }
+
+		a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 12px; }
+		a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
+		img {border: none;}
+		td { font-size: 12px; color: #7A7A7A; }
+		</style>
+	</head>
+
+	<body ng-controller="encuestaController as encuestaCtrl">
+				<br/>
+				<center><h1>RICO PERO SALUDABLE</h1></center>
+				<br/>
+				<br/>
+				<center><datos></datos>
+				<pregunta1 ng-show="encuestaCtrl.esVisible(1)"></pregunta1>
+				<pregunta2 ng-show="encuestaCtrl.esVisible(2)"></pregunta2>
+				<pregunta3 ng-show="encuestaCtrl.esVisible(3)"></pregunta3>
+				<pregunta4 ng-show="encuestaCtrl.esVisible(4)"></pregunta4>
+				<pregunta5 ng-show="encuestaCtrl.esVisible(5)"></pregunta5>
+				<pregunta6 ng-show="encuestaCtrl.esVisible(6)"></pregunta6>
+				<final ng-show="encuestaCtrl.finalVisible"></final>
+				<img src = "../img/rps.png" width="40%"></center>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<div align="center" id="datosEstudiante" class="w3-div" style="background-color:#c2d6d6; width:50%;">	
+		<form style="background-color:#c2d6d6" name="loginForm" ng-submit="encuestaCtrl.mostrarDatos()" novalidate="false" ng-show="encuestaCtrl.formVisible">
+			<h1>Formulario de caracterización</h1>
+			<input ng-model="encuestaCtrl.datos.cedula" id="cedula" name="cedula" type="text" size="30" maxlength="10" placeholder="cedula" required>
+			<br/>
+			<br/>
+			<input ng-model="encuestaCtrl.datos.usuario" id="usuario" name="usuario" type="text" size="30" maxlength="30" placeholder="usuario UdeA" required>
+			<br/>
+			<br/>
+			<input ng-model="encuestaCtrl.datos.programa" id="programa" name="programa" type="text" size="30" maxlength="30" placeholder="programa academico" required>
+			<br/>
+			<br/>
+			<input ng-model="encuestaCtrl.datos.edad" id="edad" name="edad" type="number" size="30" maxlength="3" placeholder="edad" required>
+			<br/>
+			<br/>
+			<select ng-model="encuestaCtrl.datos.genero" id="genero" name="genero" placeholder="genero">
+				<option value="masculino">Masculino</option>
+				<option value="femenino">Femenino</option>
+				<option value="transgenero">Transgénero</option>
+			</select>
+			<br/>
+			<br/>
+			<input id="botonIniciar" type="submit"  class="w3-btn" value="Iniciar" >
+			<input id="botonCancelar" type="button" class="w3-btn" value="Cancelar" >
+			<br/>
+	</form>
+</div>
